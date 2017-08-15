@@ -11,4 +11,4 @@ test:
  prod:
    branch: master
    heroku:
-     appname: {your-heroku-app-name}
+     appname: aa-build-and-deploy
