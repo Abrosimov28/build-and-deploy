@@ -26,6 +26,9 @@
         } else {
           vm.result = 'Cannot divide by zero'
         }
+      } else if(operator === 'minus'){
+        var result = firstArg - secondArg;
+        vm.result = result;
       }
       else {
         vm.result = 'Operator not implemented';
