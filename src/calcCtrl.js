@@ -21,7 +21,7 @@
         if (secondArg !== 0){
           vm.result = firstArg / secondArg;
       } else {
-          vm.result = 'Cannot divide by zero'
+          vm.result = 'Cannot divide by zero';
         }
       } else if(operator === 'minus'){
         vm.result = firstArg - secondArg;
@@ -30,5 +30,5 @@
         vm.result = 'Operator not implemented';
       }
     }
-  };
+  }
 }());
