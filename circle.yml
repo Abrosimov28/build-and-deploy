@@ -7,7 +7,7 @@ dependencies:
 test:
  override:
    - grunt test
- deployment:
+deployment:
  prod:
    branch: master
    heroku:
