@@ -173,14 +173,35 @@ describe('the calculation controller', function () {
       });
     });
 
+
     describe('multiply operator', function(){
       var operator = 'multiply';
 
-      it('should not be implemented', function(){
+      it('should calculate -5 * -5', function(){
+        var ctrl = createController();
+        ctrl.calculate(-5, -5, operator);
+
+        expect(ctrl.result).toBe(25);
+        });
+      it('should calculate -10 * 10', function(){
+        var ctrl = createController();
+        ctrl.calculate(-10, 10, operator);
+
+        expect(ctrl.result).toBe(-100);
+      });
+
+      it('should calculate 10 * 10', function(){
         var ctrl = createController();
         ctrl.calculate(10, 10, operator);
 
-        expect(ctrl.result).toBe('Operator not implemented');
+        expect(ctrl.result).toBe(100);
+      });
+
+      it('should calculate 10 * 0', function(){
+        var ctrl = createController();
+        ctrl.calculate(10, 0, operator);
+
+        expect(ctrl.result).toBe(0);
       });
     });
 
